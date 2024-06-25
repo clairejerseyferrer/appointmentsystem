@@ -66,7 +66,7 @@ public class InventorySupplyWindow {
         panel.add(scrollPane1);
 
         // Add another label for the second table
-        JLabel titleLabel2 = new JLabel("Additional Equipment", SwingConstants.CENTER);
+        JLabel titleLabel2 = new JLabel("Laboratory Equipment", SwingConstants.CENTER);
         titleLabel2.setFont(new Font("Arial", Font.BOLD, 16));
         titleLabel2.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(titleLabel2);
@@ -88,7 +88,7 @@ public class InventorySupplyWindow {
         panel.add(scrollPane2);
 
         // Add another label for the third table
-        JLabel titleLabel3 = new JLabel("Consumables", SwingConstants.CENTER);
+        JLabel titleLabel3 = new JLabel("Dental Supplies", SwingConstants.CENTER);
         titleLabel3.setFont(new Font("Arial", Font.BOLD, 16));
         titleLabel3.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(titleLabel3);
