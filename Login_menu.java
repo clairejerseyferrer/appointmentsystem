@@ -27,7 +27,7 @@ public class Login_menu implements ActionListener {
         panel.setBackground(Color.CYAN);
         frame.add(panel);
 
-        JLabel titleLabel = new JLabel("Glowing Smiles Clinic");
+        JLabel titleLabel = new JLabel("Appointment Scheduler");
         titleLabel.setFont(new Font("Serif", Font.BOLD, 20));
         titleLabel.setBounds(150, 60, 250, 30);
         panel.add(titleLabel);
@@ -62,18 +62,19 @@ public class Login_menu implements ActionListener {
             String username = textField.getText().trim();
             String password = new String(passwordField.getPassword());
 
-            if (username.equals("admin") && password.equals("dentist")) {
-                JOptionPane.showMessageDialog(frame, "Welcome back, Doctor!");
-                // Open the main menu window
-                Admin admin = new Admin();
-                frame.dispose(); // Close the login window after successful login
-
-            } else if (username.equals("marc") && password.equals("ebreo")) {
+            if (username.equals("user") && password.equals("user123")) {
                 JOptionPane.showMessageDialog(frame, "Welcome!");
                 // Open the main menu window
                 Menu menu = new Menu();
                 frame.dispose(); // Close the login window after successful login
-            } else JOptionPane.showMessageDialog(frame, "Wrong Credentials", "Error", JOptionPane.ERROR_MESSAGE);
+            } else if (username.equals("admin") && password.equals("admin123")) {
+                JOptionPane.showMessageDialog(frame, "Welcome back, Doctor!");
+                // Open the main menu window
+                Admin admin = new Admin();
+                frame.dispose(); // Close the login window after successful login
+            } else {
+                JOptionPane.showMessageDialog(frame, "Wrong Credentials", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
 
